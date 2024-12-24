@@ -17,7 +17,7 @@
         </aside>
         <main>
             <h3 id="battle-1">Battle #1</h3>
-            <ol>
+            <ol class="solutions">
                 <li>
                     <h4>Simply Square</h4>
                     <iframe src="https://alollla.github.io/css-battle/battle-1/1-simply-square/" width="400" height="300" loading="lazy"></iframe>
@@ -52,5 +52,14 @@
         iframe{
             border: 0;
         }
+        .solutions{
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            & > li::marker {
+                font-weight: bold;
+            }
+        }
+        
     </style>
 </html>
