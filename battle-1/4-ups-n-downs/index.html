@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#4. Ups n Downs</title>
+    </head>
+    <body>
+        <div></div>
+        <style>
+          body{
+            background:#62306d;
+            display:flex;
+            width: 400px;
+            height: 300px;
+            margin: 0;
+          }
+          div{width:100;height:100;background:#f7ec7d;position:absolute;left:50%;bottom:50%;transform:translateX(-50%)}
+          div{border-radius:50px 50px 0 0}
+          div:after,div:before{content:'';background:#f7ec7d;width:100;height:100;position:absolute;top:100;border-radius:0 0 50px 50px}
+          div:before{right:100}
+          div:after{left:100}
+        </style>
+    </body>
+</html>
