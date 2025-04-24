@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#1. Simply Square</title>
+    </head>
+    <body>
+        <div></div>
+        <style>
+          body{
+            background:#6592cf;
+            display:flex;
+          }
+          div{
+            margin:auto;
+            width:300px;
+            height:150px;
+            background:#243d83;
+            display:flex;
+            position:relative;
+          }
+          div::before{
+            content:'';
+            position:absolute;
+            top:50%;
+            left:50%;
+            border:50px solid #6592cf;
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            transform:translate(-50%,-50%);
+          }
+          div::after{
+            content:'';
+            background:#eeb850;
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            margin:auto;
+          }
+        </style>
+    </body>
+</html>
