@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Apr 24, 2025</title>
+    </head>
+    <body>
+        <div class="m"></div>
+        <div class="s"></div>
+        <style>
+          body {
+            background: #6255AA;
+            position: relative;
+          }
+          .m {
+            position: absolute;
+            top: calc(50% - 25px);
+            height: 50px;
+            left: 17px;
+            right: 17px;
+            background: #5DCBA3;
+          }
+          .s {
+            position: absolute;
+            top: 67px;
+            right: 67px;
+            width: 50px;
+            height: 150px;
+            background: #5DCBA3;
+          }
+          .s::after,
+          .s::before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            width: 50px;
+            height: 50px;
+            background: #5DCBA3;
+          }
+          .s::before {
+            bottom: 100%;
+          }
+          .s::after {
+            top: 100%;
+          }
+        </style>
+    </body>
+</html>
