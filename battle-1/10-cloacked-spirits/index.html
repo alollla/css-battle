@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#10. Cloacked Spirits</title>
+    </head>
+    <body>
+        <div></div>
+        <div class="a"></div>
+        <div></div>
+        <style>
+          body{
+            background:#62306D;
+            margin: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 400px;
+            height: 300px;
+          }
+          div{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #F7EC7D;
+          }
+          div::before{
+            content: "";
+            position: absolute;
+          }
+          div::before {
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            top: -50px;
+            background: #E38F66;
+            border: 20px solid #AA445F;
+          }
+          .a{
+            height: 200px;
+          }
+          .a::before {
+            background: #AA445F;
+            border-color: #E38F66;
+          }
+        </style>
+    </body>
+</html>
