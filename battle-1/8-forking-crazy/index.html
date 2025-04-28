@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#7. Leafy Trail</title>
+    </head>
+    <body>
+        <div class="b">
+          <div class="t"></div>
+          <div class="t t2"></div>
+          <div class="t t3"></div>
+        </div>
+        <style>
+          body{
+            background:#6592CF;
+            width: 400px;
+            height: 300px;
+            margin: 0;
+          }
+          .b {
+            position: relative;
+            height: 190px;
+            width: 140px;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+            margin: 60px auto 0;
+            background:#060F55;
+          }
+          .b::before {
+            content: "";
+            position: absolute;
+            top: 185px;
+            left: 60px;
+            width: 20px;
+            height: 55px;
+            background:#060F55;
+          }
+          .t {
+            position: absolute;
+            border-radius: 20px;
+            left: 20px;
+            top: -10px;
+            width: 20px;
+            height: 110px;
+            background:#6592CF;
+          }
+          .b:after,
+          .t::after{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background: #060F55;
+            right: 100%;
+          }
+          .b:after{
+            right: 0;
+            top: -10px;
+          }
+          .t2 {
+            left: 60px;
+          }
+          .t3 {
+            left: 100px;
+          }
+        </style>
+    </body>
+</html>
