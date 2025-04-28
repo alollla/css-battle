@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#12. Wiggly Moustache</title>
+    </head>
+    <body>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <style>
+          body{
+            width: 400px;
+            height: 300px;
+            margin: 0;
+            background: #F5D6B4;
+          }
+          .a,.b,.c {
+            position: absolute;
+            top: 150px;
+            width: 100px;
+            height: 50px;
+            overflow: hidden;
+          }
+          .a::before, 
+          .b::before,
+          .c::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 60px;
+            height: 60px;
+            border: 20px solid #D86F45;
+            border-radius: 100px;
+          }
+          .a {
+            left: 70px;
+          }
+          .b {
+            top:100px;
+            left:150px;
+          }
+          .b::before {
+            top: 0;
+          }
+          .c {
+            left:230px;
+          }
+          .d, .d::after {
+            position: absolute;
+            
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background: #D86F45;
+          }
+          .d {
+            top: 140px;
+            left: 70px;
+          }
+          .d::after {
+            content: "";
+            top: 0px;
+            left: 240px;
+          }
+        </style>
+    </body>
+</html>
