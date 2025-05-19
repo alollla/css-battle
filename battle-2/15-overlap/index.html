@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#15. Overlap</title>
+    </head>
+    <body>
+        <div class="l"></div>
+        <div class="r">
+          <div class="in"></div>
+        </div>
+        <style>
+          body{
+            width: 400px;
+            height: 300px;
+            margin: 0;
+            background:#09042A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .l,.r,.in {
+            width: 150px;
+            height: 150px;
+            background: #7B3F61;
+            border-radius: 75px;
+          }
+          .r {
+            position: relative;
+            background: #E78481;
+            margin-left: -50px;
+            overflow: hidden;
+          }
+          .in {
+            position: absolute;
+            background: #09042A;
+            left: -100px;
+          }
+        </style>
+    </body>
+</html>
