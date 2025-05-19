@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#14. Web Marker Logo</title>
+    </head>
+    <body>
+        <div class="le">
+          <div class="o"></div>
+          <div class="r"></div>
+        </div>
+        <div class="ri">
+          <div class="o"></div>
+          <div class="r"></div>
+        </div>
+        <style>
+          body{
+            width: 400px;
+            height: 300px;
+            margin: 0;
+            background: #F2F2B6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .le, .ri {
+            display: flex;
+          }
+          .ri {
+            transform: rotate(180deg);
+            margin-left: -60px;
+          }
+          .o {
+            width: 0;
+            border: solid 75px transparent;
+            border-top-color: #FF6D00;
+            border-top-width: 130px;
+            border-bottom-width: 0;
+          }
+          .r {
+            width: 0;
+            border: solid 75px transparent;
+            border-top-color: #FD4602;
+            border-top-width: 130px;
+            border-bottom-width: 0;
+            margin-left: -130px;
+          }
+          .le .o,
+          .ri .r {
+            z-index: 1;
+          }
+        </style>
+    </body>
+</html>
