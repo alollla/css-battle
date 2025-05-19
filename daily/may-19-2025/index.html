@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>May 19, 2025</title>
+    </head>
+    <body>
+        <div></div>
+        <div class="a"></div>
+        <div></div>
+        <style><div class="a"></div>
+<div></div>
+          body {
+            width: 400px;
+            height: 300px;
+            background: #BDE4C1;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 20px;
+          }
+          div {
+            position: relative;
+            width: 80px;
+            height: 200px;
+            background: #4C455B;
+          }
+          div::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -40px;
+            width: 80px;
+            height: 80px;
+            border-radius: 80px;
+            background: #D95F5B;
+            z-index: -1;
+          }
+          .a {
+            background: #D95F5B;
+            align-self: flex-end;
+          }
+          .a::after {
+            background: #4C455B;
+            top: -40px;
+          }
+        </style>
+    </body>
+</html>
