@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#18. Matrix</title>
+    </head>
+    <body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="p"></div>
+        <div class="o"></div>
+        <div class="p"></div>
+        <div class="o"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <style>
+          body{
+            width: 400px;
+            height: 300px;
+            margin: 10px;
+            background: #5C434C;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+          }
+          div {
+            background: #F09462;
+            border-top-left-radius: 100%;
+          }
+          div:nth-child(even) {
+            background: #F5D6B4;
+          }
+          .o {
+            background: #F09462 !important;
+          }
+          .p {
+            background: #F5D6B4;
+          }
+        </style>
+    </body>
+</html>
