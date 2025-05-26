@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#16. Eye of the Tiger</title>
+    </head>
+    <body>
+        <div class="w">
+          <div class="c"></div>
+          <div class="f">
+            <div></div>
+            <div></div>
+          </div>
+          <div class="c"></div>
+        </div>
+        <style>
+          body{
+            width: 400px;
+            height: 300px;
+            margin: 0;
+            background: #09042A;
+            display: flex;
+          }
+          .w {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .c {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: solid 10px #09042A;
+            background:#F5BB9C;
+            z-index: 1;
+          }
+          .f {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60px;
+            height: 50px;
+            background: #E78481;
+            margin: -12px 0
+          }
+          .f > div {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: solid 10px #E78481;
+            margin-left: -70px;
+          }
+          .f > div:last-child {
+            margin-left: 0;
+            margin-right: -70px;
+          }
+        </style>
+    </body>
+</html>
