@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#20. Ticket</title>
+    </head>
+    <body>
+       <div>
+        <span></span>
+        <span></span>
+      </div>
+      <p>
+        <span></span>
+        <span></span>
+      </p>
+      <style>
+        body{
+          width: 400px;
+          height: 300px;
+          margin: 0;
+          background: #62306D;
+          display: flex;
+          place-items: center;
+          place-content: center;
+        }
+        div, p {
+          height: 100px;
+      
+          & > span:first-child {
+            top: -20px;
+          }
+          & > span:last-child {
+            bottom: -20px;
+          }
+        }
+        div {
+          width: 140px;
+          background: #F7EC7D;
+          position: relative;
+          & > span {
+            left: -20px;
+          }
+        }
+        p {
+          width: 60px;
+          background: #E38F66;
+          position: relative;
+          & > span {
+            right: -20px;
+          }
+          &::before,
+          &::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #62306D;
+            position: absolute;
+            left: -10px;
+          }
+          &::before {
+            top: -10px;
+          }
+          &::after {
+            bottom: -10px;
+          }
+        }
+        span {
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #62306D;
+          position: absolute;
+        }
+      </style>
+    </body>
+</html>
