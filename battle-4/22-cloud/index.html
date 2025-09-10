@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>#22. Cloud</title>
+    </head>
+    <body>
+      <div></div>
+      <style>
+        body{
+          width: 400px;
+          height: 300px;
+          margin: 0;
+          background: #F5D6B4;
+        }
+        div {
+          position: absolute;
+          top: 165px;
+          left: 130px;
+          width: 170px;
+          height: 50px;
+          background: #D86F45;
+          border-radius: 25px;
+          &::before,
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #D86F45;
+            border-radius: 50%;
+          }
+          &::before {
+            bottom:0;
+            left: -30px;
+          }
+          &::after {
+            bottom: 30px;
+            right: 20px;
+          }
+        }
+      </style>
+    </body>
+</html>
